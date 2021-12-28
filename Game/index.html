@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title></title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="container-1">
+                <h1 class="header">Click on the emoji</h1>
+                <p class="clicks">Clicks: <span id="score">0</span></p>
+                <br>
+                <div id="floatingmoney"></div>
+                <br>
+                <img class="hover" src="https://cdn.discordapp.com/attachments/915424661842559056/925138657675968553/R.png" alt="" width="250px" height="250px" onclick="scoreAdded(1)"> 
+                <br>
+                <div class="box" style="padding: 0px; overflow-y: scroll; overflow-x: hidden; width: 100%; height: 50%; border: 1px solid gray;">
+                    <div id="autoc" class="four">
+    
+                    </div>
+                    <div id="x2" class="four">
+    
+                    </div>
+                    <div id="bman" class="four">
+
+                    </div>
+                    <div id="mine" class="four">
+    
+                    </div>
+
+
+                    <div id="bank" class="four">
+
+                    </div>
+                    <div id="building" class="four">
+
+                    </div>
+                    <div id="rocket" class="four">
+
+                    </div>
+                    <div id="elonid" class="four">
+
+                    </div>
+                    <div id="lotter" class="four">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="container">
+                <div class="shopbox">
+                    <h1 class="shop">Shop</h1>
+                    <br>
+                    <button class="BUTTON" onclick="autoclick()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://th.bing.com/th/id/R.3d895e39604fb76fa0103f8959468b6d?rik=r8yOXURhBrXIYQ&pid=ImgRaw&r=0"> 
+                        Auto Clicker - cost [<span id="cursorcost">15</span>&nbspclicks] --&nbsp<span id="cursors">0</span>&nbspowned</p>
+                    </button>
+                    <button class="BUTTON" onclick="times2()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://th.bing.com/th/id/R.8709b0da00cae07e1da04024f9f07d80?rik=3%2ba1Gl5an2uS8g&riu=http%3a%2f%2fwww.vantagefilm.com%2ffile%2fedee%2fdownloads%2flogos%2f2x.png&ehk=Oq3sAOedRXxRUe2T9UAVgCKZs%2fMtW43BKQi%2f7widOys%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1">
+                        Double Click - cost [<span id="multiplierCost">100</span>&nbspclicks] --&nbsp<span id="multiplierowned">0</span>&nbspowned</button>
+                    </button> 
+                    <button class="BUTTON" onclick="bman()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://th.bing.com/th/id/R.425c80cd0ae7438db8422c221a1a73dd?rik=kwDBgZam3UrL9A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_548737.png&ehk=Pqvg6omtYcAQH4qeeV7W4%2f3YjukcQPBKg1WayYpUjgM%3d&risl=&pid=ImgRaw&r=0">
+                        Business Man - cost [<span id="bmancost">300</span>&nbspclicks] --&nbsp<span id="bmanshired">0</span>&nbspowned</button>
+                    </button> 
+                    <button class="BUTTON" onclick="mine()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://cdn.discordapp.com/attachments/915424661842559056/925165761557843978/marengo-mining-clipart-limited-7.png">
+                        Mine - cost [<span id="minecost">1000</span>&nbspclicks] --&nbsp<span id="mineowed">0</span>&nbspowned</button>
+                    </button> 
+                    <button class="BUTTON" onclick="RobBank()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://cdn.discordapp.com/attachments/915424661842559056/925167617696759818/bank-emoji-clipart-md.png">
+                        Rob Bank - cost [<span id="RobCost">5000</span>&nbspclicks] --&nbsp<span id="BanksRobbed">0</span>&nbspowned</button>
+                    </button> 
+                    <button class="BUTTON" onclick="building()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://cdn.discordapp.com/attachments/915424661842559056/925184352634155028/R.png">
+                        Construct a Building - cost [<span id="buildingcost">10000</span>&nbspclicks] --&nbsp<span id="buildingowed">0</span>&nbspowned</button>
+                    </button> 
+                    <button class="BUTTON" onclick="rocket()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://cdn.onlinewebfonts.com/svg/img_452053.png">
+                        Launch a Rocket - cost [<span id="rocketCost">20000</span>&nbspclicks] --&nbsp<span id="rocketsOwned">0</span>&nbspowned</button>
+                    </button> 
+                    <button class="BUTTON" onclick="elonmuskbuy()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://th.bing.com/th/id/R.43e969979dfd8ae4b364f517571aee58?rik=iBJuUmfu9wwg8Q&pid=ImgRaw&r=0">
+                        Buy Elon Musk - cost [<span id="eloncost">100000</span>&nbspclicks] --&nbsp<span id="elonowned">0</span>&nbspowned</button>
+                    </button>
+                    <button class="BUTTON" onclick="Lottery()">
+                        <img style="width: 50px; height: 50px; margin-right: 5px;" src="https://media.discordapp.net/attachments/915424661842559056/925196406308876329/latest.png">
+                        Buy a Lottery Ticket - cost [<span id="lotterycost">5000</span>&nbspclicks] --&nbsp<span id="lotteryowned">0</span>&nbspowned</button>
+                    </button> 
+                    <br>
+                    <h1 style="color: white;">CLICKER MARKET</h1>
+                    <br>
+                    <button onclick="first()" class="BUTTON">INVEST IN CLICKVIDIA STOCK FOR 350 CLICKS FOR 1 DAY</button>
+                    <button onclick="second()"class="BUTTON">INVEST IN CLICKVIDIA STOCK FOR 350 CLICKS FOR 5 DAYS</button>
+                    <button onclick="third()" class="BUTTON">INVEST IN CLICKVIDIA STOCK FOR 350 CLICKS FOR 10 DAYS</button>
+                    <br>
+                    <button onclick="fourth()" class="BUTTON">INVEST IN CLAPPLE STOCK FOR 500 CLICKS FOR 1 DAY</button>
+                    <button onclick="fifth()" class="BUTTON">INVEST IN CLAPPLE STOCK FOR 500 CLICKS FOR 5 DAY</button>
+                    <button onclick="sixth()" class="BUTTON">INVEST IN CLAPPLE STOCK FOR 500 CLICKS FOR 10 DAY</button>
+                    <br>
+                    <button onclick="seventh()" class="BUTTON">INVEST IN CLIPTO CURRENCY FOR 1000 CLICKS FOR 1 DAY</button>
+                    <button  onclick="eight()" class="BUTTON">INVEST IN CLIPTO CURRENCY FOR 1000 CLICKS FOR 5 DAY</button>
+                    <button onclick="nine()" class="BUTTON">INVEST IN CLIPTO CURRENCY FOR 1000 CLICKS FOR 10 DAY</button>
+
+                </div>
+            </div>
+        </div>   
+        
+    </body>
+    <script src="script.js"></script>
+</html>
